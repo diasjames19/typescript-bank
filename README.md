@@ -46,11 +46,4 @@ Esta conta terá um método de depósito, que acresce 10 a mais ao valor informa
 
 [x] Os atributos name e accountNumber não podem ser alterados internamente ou externamente
 
-<<<<<<< HEAD
 
-
-
-[x] Criar instancias para cada um dos tipos de conta no app.ts e executar os métodos possíveis.
-=======
-[x] Criar instancias para cada um dos tipos de conta no app.ts e executar os métodos possíveis.
->>>>>>> ae969b85d5dddd956df70d8340c4651eb9c2ed33
