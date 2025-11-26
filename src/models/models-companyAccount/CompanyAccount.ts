@@ -2,10 +2,10 @@ import { DioAccounts } from "../DioAccounts";
 
 export class CompanyAccount extends DioAccounts {
 
-    statusConta:boolean = true;
-    constructor(name:string,accountNumber:number,statusConta:boolean){
+    
+    constructor(name:string,accountNumber:number,status:boolean){
         super(name,accountNumber);
-        this.statusConta = statusConta;
+        
          
     }
 
@@ -16,7 +16,7 @@ export class CompanyAccount extends DioAccounts {
 
     getLoan=(loan:number):number=>{
         let saldoAtual = this.deposit(1000);
-       if(!this.getvalidateStatus()){
+       if(!this.getStatus){
             throw new Error("Conta inválida!");
         }else{
             if(loan>0){
@@ -28,11 +28,5 @@ export class CompanyAccount extends DioAccounts {
         
         
     }
-     getvalidateStatus=():boolean=>{
-        try {
-            return this.statusConta;
-        } catch (error) {
-            throw new Error("Conta inválida!");
-        }
-    }   
+    
 }

@@ -17,6 +17,10 @@ export abstract class DioAccounts {
     getName=():string=>{
         return`O nome do titular da conta é: ${this.name}`;
     }
+
+    getStatus=():boolean=>{
+        return this.status;
+    }
     /* 
         Os valores dos saldos devem ser alterados, de acordo com o valor informado para depósito
         Apenas contas com o status true e saldo (balance) maior que o valor solicitado podem fazer saques
