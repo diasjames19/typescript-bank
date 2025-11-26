@@ -1,5 +1,5 @@
 
-# Typescript module
+# Typescript Bank
 
 ## Projeto desenvolvido com conceitos básicos de typescript
 
